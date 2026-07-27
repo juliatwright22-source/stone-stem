@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/fonts.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/colors.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/typography.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/motion.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/tokens/base.css">
+<link rel="stylesheet" href="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/styles.css">
+<script src="_ds/stone-stem-design-system-50e91a62-ffc3-4f1a-b10d-9bb318982ed6/_ds_bundle.js"></script>
+<script src="https://unpkg.com/lucide@0.454.0/dist/umd/lucide.js"></script>
+<style>
+body{margin:0;background:var(--surface-page,#F5F2EB)}
+a{color:var(--forest-green,#4D5D3F);text-decoration:none}
+a:hover{color:var(--green-700,#3C4A31)}
+</style>
+</helmet>
+
+<div style="background: var(--surface-page); font-family: var(--font-sans); color: var(--text-body)">
+
+<div style="position: relative; min-height: {{ heroHeight }}; overflow: hidden; background: var(--charcoal-900); display: flex; flex-direction: column">
+  <img src="{{ heroSrc }}" alt="Stone terrace and plantings at dusk" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center {{ heroAlignPos }}">
+  <div style="position: absolute; inset: 0; background: var(--scrim-full)"></div>
+  
+<div style="position: relative; flex: 1; display: flex; flex-direction: column">
+    <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6)">
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.NavBar" tone="dark" links="{{ nav }}" active-href="/" phone="918.555.2476" asset-base="assets" hint-size="100%,72px" style="padding: var(--space-5) 0; background: transparent"></x-import>
+    </div>
+    <div style="max-width: var(--container-max); margin: 0 auto; padding: 130px var(--space-6) 120px; width: 100%; box-sizing: border-box; flex: 1; display: flex; flex-direction: column; justify-content: center">
+      <img src="assets/logo-mark.png" alt="Stone &amp; Stem mark" style="display: block; height: 150px; width: 106px; object-fit: contain; object-position: left center; align-self: flex-start; flex: none; margin: 0 0 var(--space-5)">
+      <div style="display: flex; align-items: center; gap: var(--space-3); color: var(--green-300); margin-bottom: var(--space-5)">
+        <span style="width: 32px; height: 1px; background: currentColor"></span>
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase">Tulsa · Jenks · Bixby · Broken Arrow · Owasso</span>
+      </div>
+      <h1 style="font-family: var(--font-serif-display); font-size: var(--size-display-1); font-weight: 500; line-height: var(--leading-display); letter-spacing: var(--tracking-display); color: var(--ivory-100); margin: 0; max-width: 15ch">Crafted outdoor living</h1>
+      <p style="font-size: var(--size-body-lg); line-height: var(--leading-body); color: rgba(245,242,235,0.82); max-width: 46ch; margin: var(--space-5) 0 0">Stone set by hand, plantings chosen for the site, and one crew that stays with your property from the first sketch to the last sweep.</p>
+      <div style="display: flex; gap: var(--space-4); margin-top: var(--space-6)">
+        <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Button" variant="inverse" size="lg" hint-size="auto,52px">Request an estimate</x-import>
+        <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Button" variant="outlineInverse" size="lg" hint-size="auto,52px">See our work</x-import>
+      </div>
+    </div>
+  </div></div>
+
+<section style="padding: 112px 0">
+  <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6); display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center">
+    <div>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.SectionHeading" eyebrow="Who we are" title="A landscape company that draws first" intro="We are a design–build studio: the person who measures your grade is the person who sets your stone. That is why our patios sit flat a decade later." hint-size="100%,200px"></x-import>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.StatRow" items="{{ stats }}" hint-size="100%,90px" style="margin-top: var(--space-7)"></x-import>
+    </div>
+    <div style="position: relative; aspect-ratio: 4 / 5; border-radius: var(--radius-card); overflow: hidden">
+      <img src="uploads/stockimage4.png" alt="Dry-laid stone wall and shade plantings" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+    </div>
+  </div>
+</section>
+
+<section style="padding: 0 0 112px">
+  <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6)">
+    <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.SectionHeading" eyebrow="What we do" title="Seven services, one standard" hint-size="100%,140px"></x-import>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-4); margin-top: var(--space-7)">
+      <sc-for list="{{ services }}" as="s" hint-placeholder-count="7">
+        <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.ServiceCard" index="{{ s.index }}" title="{{ s.title }}" description="{{ s.description }}" icon="{{ s.iconEl }}" hint-size="100%,220px"></x-import>
+      </sc-for>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Card" variant="inverse" padding="var(--space-6)" hint-size="100%,220px" style="display: flex; flex-direction: column; justify-content: space-between; gap: var(--space-5)">
+        <div style="font-family: var(--font-serif-display); font-size: 24px; line-height: 1.2; color: var(--ivory-100)">Not sure where to start?</div>
+        <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Button" variant="inverse" size="sm" hint-size="auto,38px">Book a site walk</x-import>
+      </x-import>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface-sunken); padding: 112px 0">
+  <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6)">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-6)">
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.SectionHeading" eyebrow="Recent work" title="Properties we finished this season" hint-size="auto,140px"></x-import>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Button" variant="secondary" hint-size="auto,44px">All projects</x-import>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-7)">
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.ProjectCard" category="Stonework" title="Terraced bluestone patio" location="Midtown Tulsa, OK" image-src="uploads/stockimage5.png" hint-size="100%,420px"></x-import>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.ProjectCard" category="Plantings" title="Oak shade garden" location="Jenks, OK" image-src="uploads/stockimage3.png" hint-size="100%,420px"></x-import>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.ProjectCard" category="Lighting" title="Evening walk lighting" location="Bixby, OK" image-src="uploads/stockimage6.png" hint-size="100%,420px"></x-import>
+    </div>
+  </div>
+</section>
+
+<section style="position: relative; overflow: hidden">
+  <img src="uploads/stockimage2.png" alt="Curved bed edge and lawn at golden hour" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+  <div style="position: absolute; inset: 0; background: var(--scrim-full)"></div>
+  <div style="position: relative; max-width: var(--container-narrow); margin: 0 auto; padding: 128px var(--space-6); text-align: center">
+    <div style="font-size: 12px; font-weight: 700; letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--green-300)">Measured first, then built</div>
+    <p style="font-family: var(--font-serif-display); font-size: var(--size-display-3); font-weight: 500; line-height: var(--leading-heading); color: var(--ivory-100); margin: var(--space-5) 0 0">Every drawing starts on the property, in the light you will actually use it in.</p>
+  </div>
+</section>
+
+<section style="background: var(--surface-brand); padding: 112px 0">
+  <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 var(--space-6); display: grid; grid-template-columns: 1.3fr 1fr; gap: 80px; align-items: center">
+    <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Testimonial" tone="dark" quote="They treated the back yard like it mattered — and the stonework still looks set, four winters on." name="The Harmons" detail="Midtown Tulsa — terrace, plantings &amp; lighting" hint-size="100%,220px"></x-import>
+    <div style="display: flex; flex-direction: column; gap: var(--space-4); align-items: flex-start">
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Badge" tone="inverse" hint-size="auto,26px">Fully licensed &amp; insured</x-import>
+      <div style="font-size: var(--size-body); line-height: var(--leading-body); color: rgba(245,242,235,0.82)">Estimates are free, scheduled within one business day, and walked with a designer — not a salesperson.</div>
+      <x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Button" variant="inverse" hint-size="auto,44px">Request an estimate</x-import>
+    </div>
+  </div>
+</section>
+
+<x-import component-from-global-scope="StoneStemDesignSystem_50e91a.Footer" columns="{{ footerCols }}" phone="918.555.2476" email="jonathan@stoneandstem.com" site="stoneandstem.com" asset-base="assets" hint-size="100%,320px"></x-import>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;heroHeight&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:940,&quot;min&quot;:600,&quot;max&quot;:1200,&quot;step&quot;:20,&quot;unit&quot;:&quot;px&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;heroImage&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;uploads/stockimage1.png&quot;,&quot;options&quot;:[&quot;uploads/stockimage1.png&quot;,&quot;uploads/stockimage2.png&quot;,&quot;uploads/stockimage3.png&quot;,&quot;uploads/stockimage4.png&quot;,&quot;uploads/stockimage5.png&quot;,&quot;uploads/stockimage6.png&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero&quot;},&quot;heroAlign&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;top&quot;,&quot;options&quot;:[&quot;top&quot;,&quot;center&quot;,&quot;bottom&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Hero&quot;}}">
+class Component extends DCLogic {
+  icon(name) {
+    return React.createElement('i', { 'data-lucide': name, key: name, style: { display: 'block', width: 22, height: 22 } });
+  }
+  drawIcons() {
+    if (window.lucide) window.lucide.createIcons({ attrs: { width: 22, height: 22, 'stroke-width': 1.5 } });
+  }
+  componentDidMount() {
+    this.drawIcons();
+    this._t = setTimeout(() => this.drawIcons(), 600);
+  }
+  componentDidUpdate() { this.drawIcons(); }
+  componentWillUnmount() { clearTimeout(this._t); }
+  renderVals() {
+    const align = this.props.heroAlign ?? 'bottom';
+    return {
+      heroHeight: (this.props.heroHeight ?? 940) + 'px',
+      heroSrc: this.props.heroImage ?? 'uploads/stockimage1.png',
+      heroAlignPos: align === 'top' ? '20%' : align === 'center' ? '50%' : '80%',
+      nav: [
+        { href: '/services', label: 'Services' },
+        { href: '/work', label: 'Our work' },
+        { href: '/about', label: 'About' },
+        { href: '/contact', label: 'Contact' }
+      ],
+      stats: [
+        { value: '18', label: 'Years in Tulsa' },
+        { value: '240+', label: 'Properties built' },
+        { value: '2', label: 'Crews, no subs' }
+      ],
+      services: [
+        { index: '01', icon: 'ruler', title: 'Design', description: 'Measured site plans and planting drawings before anything is built.' },
+        { index: '02', icon: 'hammer', title: 'Build', description: 'One crew from first cut to final sweep — no subcontracted hand-offs.' },
+        { index: '03', icon: 'mountain-snow', title: 'Stonework', description: 'Dry-laid walls, cut-stone steps and flagstone terraces set to last.' },
+        { index: '04', icon: 'leaf', title: 'Plantings', description: 'Beds chosen for the site’s light, soil and water — not a catalogue.' },
+        { index: '05', icon: 'flame', title: 'Outdoor living', description: 'Kitchens, fire features and shade structures matched to the house.' },
+        { index: '06', icon: 'lightbulb', title: 'Lighting', description: 'Low-voltage paths, uplit specimens and warm 2700K fixtures.' },
+        { index: '07', icon: 'droplets', title: 'Drainage', description: 'Grading, dry creeks and French drains that move water away quietly.' }
+      ].map(s => Object.assign({}, s, { iconEl: this.icon(s.icon) })),
+      footerCols: [
+        { title: 'Services', items: ['Design', 'Build', 'Stonework', 'Plantings', 'Outdoor living', 'Lighting', 'Drainage'] },
+        { title: 'Company', items: ['Our work', 'About', 'Process', 'Careers'] },
+        { title: 'Service area', items: ['Tulsa', 'Jenks', 'Bixby', 'Broken Arrow', 'Owasso'] }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

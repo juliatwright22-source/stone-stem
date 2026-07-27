@@ -1,0 +1,48 @@
+:root{
+--font-serif-display:"Cormorant Garamond",'Times New Roman',serif;
+--font-sans:"Lato",'Helvetica Neue',Arial,sans-serif;
+--font-mono:ui-monospace,"SFMono-Regular",Menlo,monospace;
+
+/* Roles */
+--text-display:var(--font-serif-display);
+--text-heading-family:var(--font-serif-display);
+--text-body-family:var(--font-sans);
+--text-eyebrow-family:var(--font-sans);
+
+/* Sizes — display (serif) */
+--size-display-1:76px;
+--size-display-2:58px;
+--size-display-3:44px;
+--size-h1:36px;
+--size-h2:28px;
+--size-h3:22px;
+
+/* Sizes — sans */
+--size-body-lg:18px;
+--size-body:16px;
+--size-body-sm:14px;
+--size-caption:12.5px;
+--size-eyebrow:12px;
+
+/* Line heights */
+--leading-display:1.06; /* @kind other */
+--leading-heading:1.18; /* @kind other */
+--leading-body:1.65; /* @kind other */
+--leading-tight:1.35; /* @kind other */
+
+/* Tracking — the brand leans on wide letterspacing for caps */
+--tracking-display:0.01em; /* @kind other */
+--tracking-wordmark:0.06em; /* @kind other */
+--tracking-eyebrow:0.22em; /* @kind other */
+--tracking-nav:0.14em; /* @kind other */
+--tracking-button:0.13em; /* @kind other */
+--tracking-body:0; /* @kind other */
+
+/* Weights */
+--weight-display:500; /* @kind other */
+--weight-display-light:300; /* @kind other */
+--weight-body:400; /* @kind other */
+--weight-body-bold:700; /* @kind other */
+
+--smallcaps-transform:uppercase; /* @kind other */
+}

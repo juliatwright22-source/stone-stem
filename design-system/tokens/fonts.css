@@ -1,0 +1,7 @@
+/* Stone & Stem webfonts.
+   SUBSTITUTION NOTE: no font binaries were provided with the brand package.
+   Cormorant Garamond is the nearest Google Fonts match to the high-contrast
+   small-caps serif in the wordmark; Lato is the nearest match to the
+   letterspaced humanist sans used on collateral (business card, signage).
+   Replace these @import/@font-face declarations if the real foundry files arrive. */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap");

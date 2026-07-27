@@ -1,0 +1,16 @@
+:root{
+/* Calm, horticultural pacing — long fades and small rises. No bounce, no spring. */
+--ease-standard:cubic-bezier(0.4,0,0.2,1); /* @kind other */
+--ease-out-soft:cubic-bezier(0.16,0.84,0.44,1); /* @kind other */
+--ease-in-out-slow:cubic-bezier(0.65,0.05,0.36,1); /* @kind other */
+--duration-instant:90ms; /* @kind other */
+--duration-fast:160ms; /* @kind other */
+--duration-base:240ms; /* @kind other */
+--duration-slow:420ms; /* @kind other */
+--duration-reveal:700ms; /* @kind other */
+--transition-color:color var(--duration-fast) var(--ease-standard),background-color var(--duration-fast) var(--ease-standard),border-color var(--duration-fast) var(--ease-standard); /* @kind other */
+--transition-lift:transform var(--duration-base) var(--ease-out-soft),box-shadow var(--duration-base) var(--ease-out-soft); /* @kind other */
+--lift-hover:translateY(-2px); /* @kind other */
+--press-scale:scale(0.985); /* @kind other */
+--image-zoom-hover:scale(1.035); /* @kind other */
+}
