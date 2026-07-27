@@ -40,10 +40,10 @@ a{color:var(--text-brand);text-decoration:none}
 
 /* ---- Section heading ---- */
 .section-heading{display:flex;flex-direction:column;gap:var(--space-4)}
-.section-heading .eyebrow{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-sans);font-size:var(--size-eyebrow);font-weight:700;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--text-brand)}
+.eyebrow{display:flex;align-items:center;gap:var(--space-3);font-family:var(--font-sans);font-size:var(--size-eyebrow);font-weight:700;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--text-brand)}
 .section-heading.tone-dark .eyebrow{color:var(--green-300)}
-.section-heading h2{font-size:var(--size-display-3)}
-.section-heading.tone-dark h2{color:var(--text-on-dark)}
+.section-heading h1,.section-heading h2{font-size:var(--size-display-3)}
+.section-heading.tone-dark h1,.section-heading.tone-dark h2{color:var(--text-on-dark)}
 .section-heading .intro{font-size:var(--size-body-lg);color:var(--text-muted);max-width:58ch;margin:0}
 .section-heading.tone-dark .intro{color:var(--text-on-dark-muted)}
 
@@ -164,4 +164,128 @@ a{color:var(--text-brand);text-decoration:none}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;gap:var(--space-2)}
   .footer-copyright{margin-left:0}
+}
+
+/* ================= Interior pages ================= */
+
+/* ---- Light nav (non-floating, ivory) ---- */
+.site-header--light{position:relative;background:var(--surface-raised);border-bottom:1px solid var(--border-hairline)}
+.site-header--light .nav-bar{border-bottom:none}
+.site-header--light .nav-logo img{filter:none}
+.site-header--light .nav-links a{color:var(--text-body)}
+.site-header--light .nav-links a.active,.site-header--light .nav-links a:hover{color:var(--text-brand);border-bottom-color:var(--forest-green)}
+.site-header--light .nav-phone{color:var(--text-heading)}
+.site-header--light .nav-toggle{color:var(--text-heading);border-color:var(--border-default)}
+@media (max-width:1000px){
+  .site-header--light .nav-links{background:var(--surface-raised);border-bottom:1px solid var(--border-hairline)}
+}
+
+/* ---- Back link ---- */
+.back-link{display:inline-flex;align-items:center;gap:var(--space-2);font-family:var(--font-sans);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-brand)}
+.back-link:hover{color:var(--green-800)}
+.back-link svg{width:14px;height:14px;stroke-width:1.5}
+
+/* ---- Page header band ---- */
+.page-header{padding:96px 0 64px}
+.page-header .section-heading{max-width:760px}
+.page-header-meta{display:flex;align-items:center;gap:var(--space-3);margin-top:var(--space-4);font-family:var(--font-sans);font-size:10.5px;font-weight:700;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--green-300)}
+
+/* ---- Generic two-column content split ---- */
+.content-split{padding:96px 0}
+.content-split .container{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+
+/* ---- Feature list ---- */
+.feature-list{list-style:none;margin:var(--space-6) 0 0;padding:0;display:flex;flex-direction:column;gap:var(--space-3)}
+.feature-list li{display:flex;align-items:flex-start;gap:var(--space-3);font-size:var(--size-body-sm);color:var(--text-body);line-height:var(--leading-body)}
+.feature-list li svg{width:16px;height:16px;flex:none;margin-top:3px;color:var(--forest-green);stroke-width:1.5}
+
+/* ---- Image frame ---- */
+.image-frame-figure{margin:0}
+.image-frame{position:relative;overflow:hidden;border-radius:var(--radius-card);background:var(--stone-300)}
+.image-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.image-frame.ratio-16-9{aspect-ratio:16/9}
+.image-frame.ratio-4-3{aspect-ratio:4/3}
+.image-frame.ratio-4-5{aspect-ratio:4/5}
+.image-frame.ratio-3-2{aspect-ratio:3/2}
+.image-frame .scrim-bottom{position:absolute;inset:0;background:var(--scrim-bottom)}
+.image-frame-caption{font-family:var(--font-sans);font-size:var(--size-caption);letter-spacing:.04em;color:var(--text-subtle);margin-top:var(--space-3)}
+
+/* ---- Simple CTA band ---- */
+.cta-simple{background:var(--surface-brand);padding:96px 0;text-align:center}
+.cta-simple-inner{max-width:var(--container-narrow);margin:0 auto;padding:0 var(--space-6);display:flex;flex-direction:column;align-items:center}
+.cta-simple h2{color:var(--text-on-dark);font-size:var(--size-display-3)}
+.cta-simple p{color:rgba(245,242,235,0.82);max-width:52ch;margin:var(--space-4) 0 0}
+.cta-simple .btn{margin-top:var(--space-6)}
+
+/* ---- Process steps ---- */
+.process-steps{display:flex;flex-direction:column;margin-top:var(--space-8)}
+.process-step{display:grid;grid-template-columns:80px 1fr;gap:var(--space-6);padding:var(--space-7) 0;border-top:1px solid var(--border-default)}
+.process-step:last-child{border-bottom:1px solid var(--border-default)}
+.process-step-index{font-family:var(--font-serif-display);font-size:40px;color:var(--stone-400);line-height:1}
+.process-step h3{font-size:var(--size-h2);margin-bottom:var(--space-3)}
+.process-step p{color:var(--text-muted);margin:0;max-width:58ch}
+
+/* ---- Filter pills (Tag) ---- */
+.filter-row{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-6)}
+.tag-pill{display:inline-flex;align-items:center;gap:var(--space-2);font-family:var(--font-sans);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:8px 16px;border-radius:var(--radius-pill);cursor:pointer;transition:var(--transition-color);background:transparent;color:var(--text-muted);border:1px solid var(--border-default)}
+.tag-pill:hover{color:var(--text-brand);border-color:var(--forest-green)}
+.tag-pill.is-active{background:var(--forest-green);color:var(--ivory-100);border-color:var(--forest-green)}
+
+/* ---- Ghost button ---- */
+.btn-ghost{background:transparent;color:var(--text-brand);border-color:transparent;padding-left:0;padding-right:0}
+.btn-ghost:hover{color:var(--green-800)}
+
+/* ---- Related links ---- */
+.related-links{margin-top:var(--space-8);padding-top:var(--space-6);border-top:1px solid var(--border-default)}
+.related-links-title{font-family:var(--font-sans);font-size:11px;font-weight:700;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--text-subtle);margin-bottom:var(--space-4)}
+.related-links-list{display:flex;gap:var(--space-3);flex-wrap:wrap}
+.related-links-list a{font-family:var(--font-sans);font-size:var(--size-body-sm);font-weight:700;color:var(--text-body);border:1px solid var(--border-default);border-radius:var(--radius-pill);padding:8px 16px;transition:var(--transition-color)}
+.related-links-list a:hover{border-color:var(--forest-green);color:var(--text-brand)}
+
+/* ---- Form controls ---- */
+.form-field{display:flex;flex-direction:column;gap:var(--space-2);margin-bottom:var(--space-5)}
+.form-field label{font-family:var(--font-sans);font-size:11px;font-weight:700;letter-spacing:var(--tracking-eyebrow);text-transform:uppercase;color:var(--text-muted)}
+.form-field .required{color:var(--bronze-600)}
+.form-control{width:100%;font-family:var(--font-sans);font-size:var(--size-body);color:var(--text-body);background:var(--surface-raised);border:1px solid var(--border-default);border-radius:var(--radius-sm);padding:13px 14px;outline:none;transition:var(--transition-color)}
+.form-control:focus{border-color:var(--forest-green);box-shadow:0 0 0 3px rgba(77,93,63,0.12)}
+textarea.form-control{line-height:var(--leading-body);resize:vertical}
+.select-wrap{position:relative}
+.select-wrap select.form-control{appearance:none;padding-right:40px;cursor:pointer}
+.select-wrap::after{content:'\25be';position:absolute;right:15px;top:50%;transform:translateY(-50%);color:var(--text-subtle);font-size:10px;pointer-events:none}
+.checkbox-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-3);margin-top:var(--space-2)}
+.checkbox-item{display:inline-flex;align-items:center;gap:var(--space-3);font-family:var(--font-sans);font-size:var(--size-body-sm);color:var(--text-body);cursor:pointer}
+.checkbox-control{position:relative;width:18px;height:18px;flex:none}
+.checkbox-input{position:absolute;inset:0;opacity:0;margin:0;cursor:pointer}
+.checkbox-box{position:absolute;inset:0;border-radius:var(--radius-xs);border:1px solid var(--border-strong);background:var(--surface-raised);display:flex;align-items:center;justify-content:center;transition:var(--transition-color)}
+.check-icon{width:11px;height:11px;opacity:0;transition:opacity var(--duration-fast) var(--ease-standard)}
+.checkbox-input:checked ~ .checkbox-box{background:var(--forest-green);border-color:var(--forest-green)}
+.checkbox-input:checked ~ .checkbox-box .check-icon{opacity:1}
+.checkbox-input:focus-visible ~ .checkbox-box{box-shadow:var(--shadow-focus)}
+.form-note{font-size:var(--size-caption);color:var(--text-subtle);margin-top:var(--space-3)}
+.form-success{display:none;padding:var(--space-5);border:1px solid var(--green-300);background:var(--green-100);border-radius:var(--radius-card);color:var(--green-800);font-size:var(--size-body-sm);margin-top:var(--space-5)}
+.form-success.is-visible{display:block}
+
+/* ---- Contact layout ---- */
+.contact-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:80px;padding:64px 0 128px}
+.contact-aside-block{padding-top:var(--space-5);border-top:1px solid var(--border-default)}
+.contact-aside-block:first-child{padding-top:0;border-top:none}
+.contact-aside-block h4{font-size:var(--size-h3);margin-bottom:var(--space-2)}
+.contact-aside-block p{color:var(--text-muted);font-size:var(--size-body-sm);margin:0}
+.contact-aside-block a{color:var(--text-muted);font-size:var(--size-body-sm)}
+.contact-aside-block a:hover{color:var(--text-brand)}
+.contact-aside{display:flex;flex-direction:column;gap:var(--space-6)}
+
+/* ---- Careers apply block ---- */
+.apply-block{display:flex;flex-direction:column;gap:var(--space-4);align-items:flex-start;padding:var(--space-7);background:var(--surface-card);border:1px solid var(--border-hairline);border-radius:var(--radius-card);margin-top:var(--space-8)}
+
+@media (max-width:1000px){
+  .content-split .container,.contact-grid{grid-template-columns:1fr;gap:var(--space-8)}
+  .process-step{grid-template-columns:56px 1fr}
+  .checkbox-grid{grid-template-columns:1fr}
+}
+
+@media (max-width:640px){
+  .page-header{padding:72px 0 48px}
+  .content-split{padding:64px 0}
+  .cta-simple{padding:64px 0}
 }
