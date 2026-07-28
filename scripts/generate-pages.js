@@ -281,7 +281,7 @@ for (const s of SERVICES) {
     backLabel: 'All services',
   })}
 <section class="content-split">
-  <div class="container">
+  <div class="container tight">
     <div>
       <div class="eyebrow"><span class="eyebrow-rule"></span>What's included</div>
       ${renderFeatureList(s.includes)}
