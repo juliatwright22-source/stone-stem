@@ -287,7 +287,7 @@ for (const s of SERVICES) {
       ${renderFeatureList(s.includes)}
     </div>
     <figure class="image-frame-figure">
-      <div class="image-frame ratio-4-5">
+      <div class="image-frame ratio-16-9">
         <img src="${asset(depth, s.image)}" alt="${s.title}">
       </div>
     </figure>
