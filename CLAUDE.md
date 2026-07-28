@@ -129,3 +129,24 @@ in a browser. Check both a top-level page and a nested one (e.g.
 - Note: pasted/inline chat images can't be saved to disk directly by
   Claude — had to ask the user to drop the file into `assets/`
   themselves and confirm the filename before it could be wired in.
+- Hero logo mark went through two more iterations the same day: the
+  user's next upload (`newherodesign.png`) was a 1920×1080 canvas with
+  the actual mark occupying a small centered rectangle — trimmed with
+  a one-off `sharp().trim()` script (installed in the scratchpad, not
+  committed) down to the tight card content before using it. Then,
+  after being told the display size is fixed by CSS
+  (`.hero-mark{height:150px;width:auto}`) regardless of source pixel
+  dimensions, the user exported a properly pre-cropped
+  450×640 file (`assets/newhero.png`, ~0.7:1 ratio matching the
+  original mark) which is now the hero logo — no server-side cropping
+  needed for that one.
+- Real service photos replace the generic stock images on 6 of 7
+  service detail pages (`services/design|build|stonework|plantings
+  |outdoor-living|drainage`), sourced from `assets/{slug-without-
+  hyphen}.png` (e.g. `assets/outdoorliving.png`). `services/lighting`
+  intentionally still uses `uploads/stockimage6.png` — the user didn't
+  supply a replacement for it. Updated via the `image:` field in each
+  `SERVICES` entry in `scripts/generate-pages.js`, then regenerated.
+- The user is actively curating `assets/` directly (adding/deleting
+  files between turns) — don't assume a filename mentioned earlier in
+  a session still exists; check before wiring it in.
