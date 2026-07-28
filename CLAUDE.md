@@ -109,3 +109,23 @@ in a browser. Check both a top-level page and a nested one (e.g.
   4:5 images (fixed to `align-items:start`).
 - Committed and pushed the full build to `main`.
 - Created this file.
+
+### 2026-07-28 — Cleanup pass
+- Homepage nav links (`SERVICES` / `OUR WORK` / `ABOUT` / `CONTACT`)
+  were rendering in a muted sage-gray (`--text-on-dark-muted`) that
+  blended into the hero photo's sky/foliage. Brightened to near-ivory
+  (`rgba(245,242,235,0.92)`) to match the phone number/CTA legibility.
+  Interior pages' light nav uses a separate color rule and was
+  unaffected — this was reported as homepage-only, and was.
+- Swapped the hero logo mark for a new bordered version the user
+  supplied (`assets/newherologo.png`, 236×322, opaque ivory card
+  background baked into the image itself, unlike the old transparent
+  `logo-mark.png`). Kept it at the same 150px height; switched
+  `.hero-mark` from a fixed 106px width to `width:auto` so the
+  slightly different aspect ratio doesn't get squeezed or letterboxed.
+- About page: now shows all four "How we work" steps inline instead
+  of three plus a "See the full process" link to `/process/` (edited
+  in `scripts/generate-pages.js`'s about-page body, then regenerated).
+- Note: pasted/inline chat images can't be saved to disk directly by
+  Claude — had to ask the user to drop the file into `assets/`
+  themselves and confirm the filename before it could be wired in.
